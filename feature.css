@@ -92,10 +92,10 @@ header .login-btn {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.feature-card:hover {
+/* .feature-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
+} */
 
 .feature-icon {
     font-size: 40px;
