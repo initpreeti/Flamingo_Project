@@ -8,13 +8,59 @@
   body {
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     height: 100vh;
     background-color: #4b3f91;
     font-family: Arial, sans-serif;
   }
+
+
+  /* Header */
+header {
+  background: #5A2A82;
+  color: #fff;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+header nav ul li {
+  display: inline;
+}
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 5px 10px;
+  transition: background 0.3s;
+}
+header nav ul li a:hover {
+  background: #FF4081;
+  border-radius: 5px;
+}
+header .login-btn {
+  background: #FF4081;
+  padding: 5px 15px;
+  border-radius: 20px;
+}
+
   
   .login-container {
+    margin-top: 100px;
+    height: 471px;
     display: flex;
     max-width: 800px;
     width: 100%;
@@ -73,6 +119,10 @@
   
   .login-form h2 {
     color: #333;
+  }
+
+  .login-form{
+    height: 100px;
   }
   
   .login-form p {
