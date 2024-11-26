@@ -6,96 +6,72 @@ body {
     background-color: #f9f9f9;
   }
   
-  /* Navigation Bar */
-header {
-    background: linear-gradient(90deg, #4c1d95, #6d28d9);
-    padding: 0.5rem 2rem;
+  header {
+    background-color: #4c1d95;
+    color: white;
+    padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: white;
   }
   
   .nav-links {
-    display: flex;
-    gap: 1.5rem;
     list-style: none;
-    margin: 0;
-    padding: 0;
+    display: flex;
+    gap: 1rem;
   }
   
   .nav-links a {
-    text-decoration: none;
     color: white;
-    font-weight: 500;
+    text-decoration: none;
     font-size: 1rem;
-    padding: 0.5rem 1rem;
-    transition: background 0.3s ease, color 0.3s ease;
-    border-radius: 5px;
-  }
-  
-  .nav-links a:hover {
-    background: rgb(221, 60, 60);
-    color: #4c1d95;
   }
   
   .login-btn {
-    background: rgb(200, 50, 50);
-    color: #6d28d9;
+    background-color: #fb7185;
     padding: 0.5rem 1rem;
-    border-radius: 20px;
-    font-weight: bold;
-    transition: background 0.3s ease, color 0.3s ease;
-  }
-  
-  .login-btn:hover {
-    background: #4c1d95;
+    border: none;
+    border-radius: 5px;
     color: white;
+    cursor: pointer;
   }
   
-  .courses {
-    text-align: center;
+  main {
     padding: 2rem;
-    background-color: #f3f4f6;
+    text-align: center;
   }
   
-  .courses h1 {
+  .intro h1 {
     color: #4c1d95;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
   
-  .course-list {
+  .lesson-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1.5rem;
   }
   
-  .course-card {
+  .lesson {
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 1.5rem;
     width: 300px;
-    text-align: center;
+    text-align: left;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
-  .course-card h2 {
+  .lesson h2 {
     color: #4c1d95;
   }
   
-  .course-card p {
+  .lesson p {
     color: #555;
   }
   
-  .course-card button {
+  .lesson button {
     margin-top: 1rem;
     background-color: #4c1d95;
     color: white;
@@ -105,7 +81,7 @@ header {
     cursor: pointer;
   }
   
-  .course-card button:hover {
+  .lesson button:hover {
     background-color: #6d28d9;
   }
   
@@ -116,3 +92,14 @@ header {
     background-color: #4c1d95;
     color: white;
   }
+  
+  .social-links {
+    margin-top: 0.5rem;
+  }
+  
+  .social-links a {
+    color: white;
+    margin: 0 0.5rem;
+    text-decoration: none;
+  }
+  

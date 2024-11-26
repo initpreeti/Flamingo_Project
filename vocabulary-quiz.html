@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vocabulary Quiz</title>
+  <link rel="stylesheet" href="vocabulary-quiz.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">Vocabulary Quiz</h1>
+      <nav>
+        <ul>
+          <li><a href="./HomePage.html">Home</a></li>
+          <li><a href="./AboutUs.html">About Us</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./login.html" class="login-btn">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="quiz-section">
+      <h2>Test Your Vocabulary!</h2>
+      <p>Answer the following questions to test your vocabulary knowledge.</p>
+      <button id="start-btn" onclick="startQuiz()">Start Quiz</button>
+    </section>
+
+    <!-- Quiz Modal -->
+    <div class="quiz-modal" id="quizModal">
+      <div class="quiz-content">
+        <h2>Vocabulary Quiz</h2>
+        <p id="quiz-question">Question will appear here</p>
+        <div id="quiz-options">
+          <!-- Options will be dynamically inserted -->
+        </div>
+        <button id="next-btn" onclick="nextQuestion()">Next</button>
+        <p id="quiz-result" style="display: none;">
+          Your Score: <span id="final-score"></span> out of <span id="total-questions"></span>
+        </p>
+        <button id="restart-btn" onclick="restartQuiz()" style="display: none;">Restart Quiz</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Vocabulary Quiz. All rights reserved.</p>
+  </footer>
+
+  <!-- <script src="vocabulary-quiz.js"></script> -->
+</body>
+</html>

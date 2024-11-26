@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic Vocabulary - Flamingo</title>
+  <link rel="stylesheet" href="basic-vocabulary.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1 class="logo">Flamingo</h1>
+      <nav>
+        <ul>
+          <li><a href="./HomePage.html">Home</a></li>
+          <li><a href="./Chatboat.html">Chatbot</a></li>
+          <li><a href="./AboutUs.html">About Us</a></li>
+          <li><a href="./Contact.html">Contact</a></li>
+          <li><a href="./Login.html" class="login-btn">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- Main Content -->
+  <section class="vocabulary">
+    <h1>Basic Vocabulary</h1>
+    <p>Learn essential words and phrases to start your English learning journey!</p>
+    <!-- Vocabulary Categories -->
+    <div class="categories">
+      <!-- Category: Common Words -->
+      <div class="category-card">
+        <h3>Common Words</h3>
+        <ul>
+          <li>Hello <button onclick="playAudio('hello')">        Hear</button></li>
+          <li>Goodbye <button onclick="playAudio('goodbye')">    Hear</button></li>
+          <li>Thank You <button onclick="playAudio('thankyou')"> Hear</button></li>
+        </ul>
+      </div>
+
+      <!-- Category: Objects -->
+      <div class="category-card">
+        <h3>Objects</h3>
+        <ul>
+          <li>Book <button onclick="playAudio('book')">  Hear</button></li>
+          <li>Pen <button onclick="playAudio('pen')">    Hear</button></li>
+          <li>Chair <button onclick="playAudio('chair')">Hear</button></li>
+        </ul>
+      </div>
+
+      <!-- Category: Animals -->
+      <div class="category-card">
+        <h3>Animals</h3>
+        <ul>
+          <li>Dog <button onclick="playAudio('dog')">  Hear</button></li>
+          <li>Cat <button onclick="playAudio('cat')">  Hear</button></li>
+          <li>Bird <button onclick="playAudio('bird')">Hear</button></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Quiz Section -->
+    <div class="quiz-section">
+      <h2>Test Your Vocabulary!</h2>
+      <br>
+      <p>Take a quiz to test your understanding of these words.</p>
+      <br>
+      <button onclick="startQuiz()">Start Quiz</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Flamingo. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function playAudio(word) {
+      alert("Playing pronunciation for " + word + " (Add audio links here)");
+    }
+
+    function startQuiz() {
+      alert("Quiz functionality coming soon!");
+    }
+  </script>
+</body>
+</html>
