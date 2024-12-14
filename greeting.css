@@ -1,120 +1,135 @@
-/* General Styles */
+/* styles.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-  }
-  
-  header {
-    background-color: #4c1d95;
-    color: white;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-  }
-  
-  .nav-links a {
-    color: white;
-    text-decoration: none;
-    font-size: 1rem;
-  }
-  
-  .login-btn {
-    background-color: #e91e63;
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 4px;
-    color: white;
-    text-decoration: none;
-  }
-  
-  .lesson {
-    padding: 2rem;
-    background-color: #f3f4f6;
-  }
-  
-  .lesson h1 {
-    color: #4c1d95;
-    text-align: center;
-    margin-bottom: 1rem;
-  }
-  
-  .lesson-content {
-    background-color: white;
-    padding: 1.5rem;
-    margin: 1rem auto;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .lesson-content h2 {
-    color: #4c1d95;
-  }
-  
-  .practice-section {
-    background-color: #ffffff;
-    padding: 1.5rem;
-    margin: 1rem auto;
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .practice-section ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .practice-section li {
-    margin: 0.5rem 0;
-  }
-  
-  .btn {
-    background-color: #4c1d95;
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-top: 1rem;
-  }
-  
-  .btn:hover {
-    background-color: #6d28d9;
-  }
-  
-  /* Footer */
-  footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #4c1d95;
-    color: white;
-  }
-  
-  footer .social-links {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-  }
-  
-  footer .social-links a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .lesson-content, .practice-section {
-      width: 90%;
-    }
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* header {
+  background-color: #0077cc;
+  color: #fff;
+  padding: 1em 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2em;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 1em;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+} */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  background: #5A2A82;
+  color: #fff;
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+header nav ul li {
+  display: inline;
+}
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 5px 10px;
+  transition: background 0.3s;
+}
+header nav ul li a:hover {
+  background: #FF4081;
+  border-radius: 5px;
+}
+header .login-btn {
+  background: #FF4081;
+  padding: 5px 15px;
+  border-radius: 20px;
+}
+
+.section {
+  padding: 2em;
+  text-align: center;
+  margin: 2em auto;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  max-width: 800px;
+}
+
+#quiz-box {
+  margin: 2em auto;
+  text-align: center;
+  padding: 1em;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* footer {
+  text-align: center;
+  padding: 1em;
+  background-color: #333;
+  color: #fff;
+} */
+/* Footer */
+footer {
+  background: #5A2A82;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+footer .social-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+footer .social-links li a {
+  color: #FF4081;
+  text-decoration: none;
+  font-weight: bold;
+}
